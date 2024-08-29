@@ -1,4 +1,4 @@
-Run project
+# Run project
 
 ```docker-compose up -d --build```
 
