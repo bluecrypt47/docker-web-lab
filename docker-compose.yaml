@@ -1,0 +1,26 @@
+version: '3.6'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./playground/src:/var/www/html
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    environment:
+      - MYSQL_HOSTNAME=db
+      - MYSQL_ROOT_PASSWORD=123123
+      - MYSQL_DATABASE=tintuc_db
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=123123
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db/tintuc_db.sql:/docker-entrypoint-initdb.d/tintuc_db.sql
+
+volumes:
+  db_data:
