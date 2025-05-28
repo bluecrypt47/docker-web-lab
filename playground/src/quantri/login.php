@@ -83,7 +83,7 @@ if(file_exists("../class/binhthuan.txt")) {
 <body class="login-page">
     <div class="login-box">
         <div class="logo">
-            <a>FORM ĐĂNG NHẬP CỦA ĐỨC</a>
+            <a>FORM ĐĂNG NHẬP</a>
         </div>
         <div class="card">
             <div class="body">

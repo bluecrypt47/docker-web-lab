@@ -123,7 +123,7 @@ $t = new tin;
       <div class="col-md-12">
         <div class="footer_inner">
           <p class="pull-left">Tin tức tổng hợp &copy; 2019</p>
-          <p class="pull-right">Phát triển bởi Quang Đức </p>
+          <p class="pull-right">Phát triển bởi @nhdAD3z </p>
         </div>
       </div>
     </div>
