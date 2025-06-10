@@ -1,5 +1,5 @@
 <?php
-// Flag of LFI is HPT{l0cAl_fIlE_iNc1uSi0n_0f_d3cKy}
+// Flag of LFI is TIKI{l0cAl_fIlE_iNc1uSi0n_0f_@nhdAD3z}
 require_once "class/goc.php";
 class tin extends goc {
     function TinMoi($sotin) {

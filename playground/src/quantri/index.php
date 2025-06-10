@@ -8,7 +8,7 @@ require_once "../class/quantritin.php";
 $qt = new quantritin();
 $qt->checkLogin();
 
-if($role == 1) echo "// Flag is: HPTCTF{@nhdAD3z_s35s10N_cTf}";
+if($role == 1) echo "// Flag is: TIKICTF{@nhdAD3z_s35s10N_cTf}";
 ?>
 
 <!DOCTYPE html>

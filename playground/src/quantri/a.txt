@@ -1,4 +1,4 @@
-BINHTHUAN{aTtAcK_0s_c0mM4nD_0f_@nhdAD3z}
+TIKI{aTtAcK_0s_c0mM4nD_0f_@nhdAD3z}
 a.txt	       bluec.txt	 menu1.php	   theloai_xoa.php
 binhthuan.txt  bluec1.txt	 pages		   thoat.php
 css	       loaitin_ds.php	 plugins	   tin_ds.php
