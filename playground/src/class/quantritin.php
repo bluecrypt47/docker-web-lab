@@ -26,19 +26,23 @@ class quantritin extends goc {
     }
 
     function checkLogin() {
+    // Kiểm tra xem session đã start chưa
+    if (session_status() == PHP_SESSION_NONE) {
         session_start();
-        if(!isset($_SESSION['login_id'])) {
-            //$_SESSION['error'] = "Bạn chưa đăng nhập";
-            //$_SESSION['back'] = $_SERVER['REQUEST_URI'];
+    }
+    
+    if(!isset($_SESSION['login_id'])) {
+        // Kiểm tra xem headers đã được gửi chưa
+        if (!headers_sent()) {
             header("location: login.php");
             exit();
-        //} elseif ($_SESSION['login_level'] != 1 && $SESSION['login_level'] != 0) {
-          //  $_SESSION['error'] = "Bạn không có quyền xem trang này";
-            //$_SESSION['back'] = $_SERVER['REQUEST_URI'];
-            //header("location: login.php");
-            //exit();
+        } else {
+            // Nếu headers đã gửi, dùng JavaScript redirect
+            echo '<script>window.location.href="login.php";</script>';
+            exit();
         }
     }
+}
 
     function profile($id, $name, $email, $img) {
         $name = $this->db->escape_string(trim(strip_tags($name)));
