@@ -136,9 +136,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`password`, `idUser`, `idGroup`, `hoten`, `email`, `username`, `gioitinh`, `ngaydangky`, `active`, `randomkey`) VALUES
-('202cb962ac59075b964b07152d234b70', 1, 0, 'Chuongltv', 'n15dcat025@student.ptithcm.edu.vn', 'test', 1, '2019-02-10', 0, NULL),
-('202cb962ac59075b964b07152d234b70', 2, 0, 'abc', 'n15dcat025@student.ptithcm.edu.vn', 'bcd', 1, '2019-02-10', 0, NULL),
-('e10adc3949ba59abbe56e057f20f883e', 3, 1, 'Chuongltv', 'n15dcat025@student.ptithcm.edu.vn', 'chuong', 1, '2019-02-10', 0, 'b2cf15b449aeb23857617fbce96aa4aa'),
+('202cb962ac59075b964b07152d234b70', 1, 0, 'Chuongltv', 'n15dcat025@student.edu.vn', 'test', 1, '2019-02-10', 0, NULL),
+('202cb962ac59075b964b07152d234b70', 2, 0, 'abc', 'n15dcat025@student.edu.vn', 'bcd', 1, '2019-02-10', 0, NULL),
+('e10adc3949ba59abbe56e057f20f883e', 3, 1, 'Chuongltv', 'n15dcat025@student.edu.vn', 'chuong', 1, '2019-02-10', 0, 'b2cf15b449aeb23857617fbce96aa4aa'),
 ('e10adc3949ba59abbe56e057f20f883e', 4, 0, 'Chuongltv', 'xyza1234@gmail.com', 'chuong1', 1, '2019-02-10', 0, '570badcfe14697bf2a244e2e25b93e59'),
 ('fcea920f7412b5da7be0cf42b8c93759', 5, 0, 'Chuongltv', 'abcd@gmail.com', 'chuong2', 1, '2019-02-10', 0, '5736e5428405974bae754547df27b739'),
 ('e10adc3949ba59abbe56e057f20f883e', 6, 0, 'Chuongltv', 'abd1@gmail.com', 'chuong3', 1, '2019-02-11', 0, '20ab37f149d900a55b29067b658b86e9');
