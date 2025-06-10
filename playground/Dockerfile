@@ -1,6 +1,14 @@
 FROM php:7.2-apache
 
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+RUN docker-php-ext-install mysqli pdo pdo_mysql && \
+    apt-get update && \
+    apt-get install -y \
+    iputils-ping \
+    net-tools \
+    curl \
+    wget \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /var/www/html/
 COPY ./src .
