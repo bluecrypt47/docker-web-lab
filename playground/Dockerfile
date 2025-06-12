@@ -15,7 +15,7 @@ COPY ./src .
 # config permission
 RUN chown -R www-data:www-data /var/www/html
 RUN chmod 755 /var/www/html
-RUN find . -type f -exec chmod 640 {} \;
-RUN find . -type d -exec chmod 750 {} \;
+# RUN find . -type f -exec chmod 640 {} \;
+# RUN find . -type d -exec chmod 750 {} \;
 
-RUN chmod +t -R /var/www/html/
+# RUN chmod +t -R /var/www/html/
